@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="./BookLib.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>My Book Library</h1>
+        <button id="new-book">Add New Book</button>
+    </header>
 
+    <main class="form-container">
+        <form action="" style="display: none;" class="form-card">
+            <label for="image">Image URL:</label>
+            <input type="text" placeholder="Image url" name="image">
+
+            <label for="title">Title:</label>
+            <input type="text" name="title">
+
+            <label for="author">Author:</label>
+            <input type="text" name="author">
+
+            <label for="pages">Pages:</label>
+            <input type="number" name="pages">
+
+            <label for="read">Read:</label>
+            <input type="checkbox" name="read" value="true">
+
+            <button type="submit" id="submit-button">Submit</button>
+        </form>
+
+        <div class="books">
+            
+        </div>
+    </main>
+
+    <script src="./BookLib.js"></script>
+</body>
+</html>
